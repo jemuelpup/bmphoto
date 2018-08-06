@@ -65,3 +65,23 @@
 		color: #555555;
 	}
 }
+
+ul.list-todo{
+	overflow: hidden;
+	li{
+		float: left;
+		border: 1px solid #e9e9e9;
+		margin-right: 20px;
+		width: 300px;
+		height: 252px;
+
+		img{
+			margin-bottom: 35px;
+		}
+		h3{
+			font-weight: 300;
+			font-size: 22px;
+			color: #47494f;
+		}
+	}
+}
