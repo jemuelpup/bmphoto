@@ -1,0 +1,45 @@
+@import '../../../assets/scss/variables.scss';
+@import '../../../assets/scss/functions.scss';
+
+
+header{
+	padding: 16px 0;
+	border-bottom: 3px solid #efeff0;
+}
+
+.logo{
+	margin-right: 58px;
+}
+.btn{
+	background-color: $color-primary;
+	color: #fff;
+	width: 175px;
+	height: 50px;
+	@include border-radius(0);
+	border: 0;
+	display: flex;
+	justify-content: center; /* align horizontal */
+	align-items: center; /* align vertical */
+}
+
+a{
+	color: #47494f;
+}
+.link-block,
+.link-access,
+.header-contents{
+	display: flex;
+	align-items: center;
+}
+.link-access,
+.link-block{
+	li{
+		margin-right: 42px;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+}
+.link-access{
+    margin-left: auto;
+}

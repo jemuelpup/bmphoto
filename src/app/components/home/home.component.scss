@@ -1,0 +1,67 @@
+@import '../../../assets/scss/variables.scss';
+@import '../../../assets/scss/functions.scss';
+
+.banner-area{
+	background-image: url("/assets/images/banner01.jpg");
+	background-color: #cacaca;
+	padding: 364px 0 169px;
+	text-align: center;
+	color: #fff;
+	.attention-text{
+		font-size: 68px;
+		font-weight: 700;
+	}
+	.banner-desc{
+		width: 730px;
+    	margin: 5px auto 28px;
+		p{
+			font-size: 24px;
+			font-weight: 300;
+			line-height: 28px;
+		}
+	}
+	.bold{
+
+	}
+	.light{
+		
+	}
+	.regular{
+		
+	}
+	button{
+		background-color: #252a30;
+		border: 0;
+		color: #fff;
+		padding: 0 35px;
+		// width: 223px;
+		margin: 0 auto;
+		height: 50px;
+		display: flex;
+		justify-content: center; /* align horizontal */
+		align-items: center; /* align vertical */
+	}
+}
+
+.section{
+	h2{
+		margin-top: 105px;
+		font-size: 30px;
+		font-weight: 300;
+		color: #181818;
+		text-align: center;
+	}
+}
+
+.steps{
+	title{
+		font-size: 18px;
+		color: #181818;
+
+	}
+	.step-desc{
+		font-size: 14px;
+		font-weight: 300;
+		color: #555555;
+	}
+}
