@@ -22,6 +22,19 @@ export class HomeComponent implements OnInit {
   	}
   ];
 
+  todoList: {}[] = [
+    {
+      imgSrc: "assets/images/icon_02.png",
+      text: "Photography"
+    },{
+      imgSrc: "assets/images/icon_02.png",
+      text: "Photography"
+    },{
+      imgSrc: "assets/images/icon_02.png",
+      text: "Photography"
+    }
+  ];
+
   ngOnInit() {
   }
 
