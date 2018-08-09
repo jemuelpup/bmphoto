@@ -18,7 +18,7 @@
 		</ul>
 		<h2>Samples from our top sellers</h2>
 		<div class="gallery-container">
-			<ul>
+			<ul class="gallery-data">
 				<li *ngFor="let imgData of galleryData">
 					<img src={{imgData.sampleImg}} alt={{imgData.sampleImgAlt}}>
 					<div class="photographer-info">
@@ -31,7 +31,7 @@
 		<h2>Get it done in 3 simple steps</h2>
 		<div class="steps">
 			<div class="row">
-				<div class="col-sm-4" *ngFor="let s of steps">
+				<div class="col-lg-4 col-md-6" *ngFor="let s of steps">
 					<div class="step-card">
 						<h3 class="title">{{s.title}}</h3>
 						<p class="step-desc">{{s.description}}</p>

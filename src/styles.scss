@@ -10,17 +10,30 @@ body{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
 }
+@media (min-width: 576px){
+	html .container{
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 768px){
+	html .container{
+        max-width: 1200px;
+    }
+}
+
+@media (min-width: 1200px) {
+    html .container{
+        max-width: 1630px;
+    }
+}
 
 @media (min-width: 1630px) {
     html .container{
         max-width: 1630px;
     }
 }
-@media (min-width: 1200px) {
-    html .container{
-        max-width: 1630px;
-    }
-}
+
 button{
 	border: 0;
 	color: #fff;

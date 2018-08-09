@@ -7,10 +7,11 @@ import { HomeComponent } from './components/home/home.component';
 import { AppRoutingModule,RoutingComponents } from './/app-routing.module';
 import { FooterComponent } from './components/footer/footer.component';
 import { library } from '@fortawesome/fontawesome-svg-core';
-// import {  } from '@fortawesome/free-solid-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { faHeart } from '@fortawesome/free-regular-svg-icons';
 
-library.add(faHeart);
+
+library.add(faHeart,faBars);
 
 @NgModule({
   declarations: [

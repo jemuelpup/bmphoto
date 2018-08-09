@@ -41,8 +41,6 @@ export class HomeComponent implements OnInit {
 			sampleImgAlt:"Description here",
 			photographerIcon:"assets/images/photographerIcon/photographerIcon_01.jpg",
 			photographerName:"Ramon S.",
-			width:150,
-			height:200
 		},
 		{
 			sampleImg:"assets/images/gallery/galeryPic_02.jpg",
@@ -53,7 +51,7 @@ export class HomeComponent implements OnInit {
 		{
 			sampleImg:"assets/images/gallery/galeryPic_03.jpg",
 			sampleImgAlt:"Description here",
-			photographerIcon:"assets/images/gallery/photographerIcon_01.jpg",
+			photographerIcon:"assets/images/photographerIcon/photographerIcon_01.jpg",
 			photographerName:"Ramon S."
 		},
 		{
