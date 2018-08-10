@@ -12,7 +12,10 @@ ul{
 
 .logo{
 	margin: 0 58px 0 0;
-	width: 110px;
+	width: 124px;
+	flex-basis: 110px;
+    flex-grow: 0;
+    flex-shrink: 0;
 }
 
 
@@ -60,9 +63,6 @@ a{
 	}
 }
 @media only screen and (max-width: 768px) {
-	.logo{
-		margin-right: 20px;
-	}
 	.show-in-sp{
 		display: block;
 	}

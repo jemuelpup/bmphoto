@@ -22,11 +22,11 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-  	if((window.innerWidth) >= 768){
-  		this.menuOpened = (window.innerWidth) >= 768;
+  	if((window.innerWidth)<=768){
+  		this.menuOpened = false
   	}
   	else{
-  		this.menuOpened = false;
+  		this.menuOpened = true;
   	}
   }
 
