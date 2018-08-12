@@ -54,10 +54,19 @@
 </g>
 </svg></p>
 		<fa-icon class="show-in-sp" icon="bars" (click)="menuOpened=!menuOpened"></fa-icon>
-		<div class="sidenav"  *ngIf="menuOpened">
+		<div class="sidenav" *ngIf="menuOpened">
 			<p class="sidenav-title show-in-sp">Menu</p>
 			<ul class="link-block">
-				<li><a href="#">Browse</a></li>
+				<li>
+					<div class="btn-group" dropdown>
+					  <a dropdownToggle class="dropdown-toggle">Browse<span class="caret"></span>
+					  </a>
+					  <ul *dropdownMenu class="dropdown-menu" role="menu">
+					    <li role="menuitem"><a class="dropdown-item" href="#">Link 1</a></li>
+					    <li role="menuitem"><a class="dropdown-item" href="#">Link 2</a></li>
+					  </ul>
+					</div>
+				</li>
 				<li><a href="#">How It Works</a></li>
 				<li><a href="#">Photographer?</a></li>
 			</ul>

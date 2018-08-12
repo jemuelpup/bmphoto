@@ -1,9 +1,9 @@
 <div class="banner-area">
 	<h1 class="attention-text">You Dream It, We Build It</h1>
 	<div class="banner-desc">
-		<p>Spend less time searching for stock images and let professional photographers create outstanding photos that meet your neeeds.</p>
+		<p>Let professional photographers build your image</p>
 	</div>
-	<button class="banner-btn black-btn">Hire a Photographer</button>
+	<button class="banner-btn green-btn">Hire a Photographer</button>
 </div>
 <section class="section area01">
 	<div class="container">
@@ -11,17 +11,22 @@
 		<ul class="list-todo">
 			<li *ngFor = "let todo of todoList">
 				<div class="todoContainer">
-					<img src={{todo.imgSrc}} alt="####">
+					<fa-icon class="icon" icon= {{todo.icon}}></fa-icon>
 					<h3>{{todo.text}}</h3>
 				</div>
 			</li>
 		</ul>
-		<h2>Samples from our top sellers</h2>
+		<h2 class="fz18">Photographers around the world ready to build your image</h2>
 		<div class="gallery-container">
 			<ul class="gallery-data">
-				<li *ngFor="let imgData of galleryData">
-					<img src={{imgData.sampleImg}} alt={{imgData.sampleImgAlt}}>
-					<div class="photographer-info">
+				<li class="gallery-image-container" *ngFor="let imgData of galleryData" (contextmenu)="onRightClick($event)">
+					<img
+					class="gallery-image"
+					src={{imgData.sampleImg}}
+					alt={{imgData.sampleImgAlt}}
+					(contextmenu)="onRightClick($event)">
+					<!-- <div class="gradient-hover"></div> -->
+					<div class="image-info">
 						<span class="photographer-icon"><img src={{imgData.photographerIcon}} alt={{imgData.photographerName}}></span>
 						<p class="photographer-name">{{imgData.photographerName}}</p>
 					</div>
@@ -30,12 +35,10 @@
 		</div>
 		<h2>Get it done in 3 simple steps</h2>
 		<div class="steps">
-			<div class="row">
-				<div class="col-lg-4 col-md-6" *ngFor="let s of steps">
-					<div class="step-card">
-						<h3 class="title">{{s.title}}</h3>
-						<p class="step-desc">{{s.description}}</p>
-					</div>
+			<div *ngFor="let s of steps">
+				<div class="step-card">
+					<h3 class="title">{{s.title}}</h3>
+					<p class="step-desc">{{s.description}}</p>
 				</div>
 			</div>
 		</div>
@@ -50,12 +53,20 @@
 			*ngFor="let ppp of photographerPricingPakages">
 				<div class="photographer-card">
 					<p class="photographer-icon">
-						<img src={{ppp.photographerIcon}} alt={{ppp.photographerName}}>
+						<img
+						src={{ppp.photographerIcon}}
+						alt={{ppp.photographerName}}
+						(contextmenu)="onRightClick($event)">
 					</p>
 					<p class="price">{{ppp.price|currency}}</p>
 					<p class="desc">{{ppp.packageDesc}}</p>
 					<ul class="galery">
-						<li *ngFor="let fi of ppp.featuredImages"><img src={{fi.source}} alt={{fi.imageName}}></li>
+						<li *ngFor="let fi of ppp.featuredImages">
+							<img
+							src={{fi.source}}
+							alt={{fi.imageName}}
+							(contextmenu)="onRightClick($event)">
+						</li>
 					</ul>
 					<a class="packageLink" href={{ppp.packageLink}}>View package</a>
 					<div class="followers-and-reaction-block">
@@ -65,7 +76,7 @@
 				</div>
 			</div>
 		</div>
-		<button class="black-btn mlrAuto">Browse More Packages</button>
+		<button class="green-btn more-btn">Browse More Packages</button>
 	</div>
 </section>
 

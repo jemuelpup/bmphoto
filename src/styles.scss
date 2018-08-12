@@ -9,6 +9,7 @@
 body{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
+	color: #181818;
 }
 @media (min-width: 576px){
 	html .container{
@@ -33,11 +34,15 @@ body{
         max-width: 1630px;
     }
 }
+html a:hover{
+	text-decoration: none;
+}
 
 button{
 	border: 0;
 	color: #fff;
 	padding: 0 35px;
+	cursor: pointer;
 	// width: 223px;
 	margin: 0 auto;
 	height: 50px;
@@ -59,4 +64,64 @@ button{
 }
 .mlrAuto{
 	margin: 0 auto;
+}
+.fz14{
+	font-size: 14px!important;
+}
+.fz18{
+	font-size: 18px!important;
+}
+.uppercase{
+	text-transform: uppercase;
+}
+
+.gallery-data{
+	.gallery-image-container{/* li */
+		position: relative;
+		overflow: hidden;
+		cursor: pointer;
+		.gallery-image{
+    		width: 100%;
+    	}
+		.image-info{
+    		position: absolute;
+    	}
+		&:before{
+			content:"";
+			position: absolute;
+			@include color-gradient-black();
+			height: 100%;
+		    width: 100%;
+		    position: absolute;
+		    top: 100%;
+		    left: 0;
+		    @include transition(top 250ms ease);
+		}
+	    &:hover:before{
+		    top: 0;
+	    }
+	}
+
+}
+.section{
+	h2{
+		padding-top: 105px;
+		font-size: 30px;
+		font-weight: $fw-light;
+		color: #181818;
+		text-align: center;
+		margin-bottom: 45px;
+		letter-spacing: 1px;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.section {
+		h2 {
+			color: #181818;
+		    padding-top: 40px;
+		    font-size: 27px;
+		    margin-bottom: 35px;
+		    letter-spacing: 1px;
+		}
+	}
 }

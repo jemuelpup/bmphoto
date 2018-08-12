@@ -4,16 +4,16 @@
 
 header{
 	padding: 17px 0;
-	border-bottom: 3px solid #efeff0;
+	border-bottom: 1px solid #efeff0;
 }
 ul{
 	margin-bottom: 0;
 }
 
 .logo{
-	margin: 0 58px 0 0;
-	width: 124px;
-	flex-basis: 110px;
+	margin: 0 92px 0 0;
+	width: 138px;
+	flex-basis: 138px;
     flex-grow: 0;
     flex-shrink: 0;
 }
@@ -37,10 +37,17 @@ a{
 
 .link-access,
 .link-block{
-	li{
+	font-size: 14px;
+	.dropdown-toggle{
+		cursor: pointer;
+	}
+	&>li{
 		margin-right: 42px;
 		&:last-child{
 			margin-right: 0;
+		}
+		button{
+			font-size: 16px;
 		}
 	}
 }

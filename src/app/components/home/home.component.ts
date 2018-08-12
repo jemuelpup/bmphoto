@@ -24,13 +24,13 @@ export class HomeComponent implements OnInit {
 
 	todoList: {}[] = [
 		{
-			imgSrc: "assets/images/icon_02.png",
+			icon: "camera",
 			text: "Photography"
 		},{
-			imgSrc: "assets/images/icon_02.png",
+			icon: "images",
 			text: "Photography"
 		},{
-			imgSrc: "assets/images/icon_02.png",
+			icon: "paint-brush",
 			text: "Photography"
 		}
 	];
@@ -189,6 +189,9 @@ export class HomeComponent implements OnInit {
 			packageLink: "",
 			followers: 4479
 		});
+	}
+	onRightClick(e){
+		e.preventDefault();
 	}
 
 }

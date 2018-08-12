@@ -6,12 +6,16 @@ import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
 import { AppRoutingModule,RoutingComponents } from './/app-routing.module';
 import { FooterComponent } from './components/footer/footer.component';
+
+// ngx bootstrap
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faCamera, faImages, faPaintBrush } from '@fortawesome/free-solid-svg-icons';
 import { faHeart } from '@fortawesome/free-regular-svg-icons';
 
 
-library.add(faHeart,faBars);
+library.add(faHeart,faBars, faCamera, faImages, faPaintBrush);
 
 @NgModule({
   declarations: [
@@ -23,7 +27,8 @@ library.add(faHeart,faBars);
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    BsDropdownModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
