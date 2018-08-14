@@ -1,0 +1,17 @@
+<div class="photographer-card">
+	<p class="photographer-icon">
+		<img src={{packageData.photographerIcon}} alt={{packageData.photographerName}} (contextmenu)="onRightClick($event)">
+	</p>
+	<p class="price">{{packageData.price|currency}}</p>
+	<p class="desc">{{packageData.packageDesc}}</p>
+	<ul class="galery">
+		<li *ngFor="let fi of packageData.featuredImages">
+			<img src={{fi.source}} alt={{fi.imageName}} (contextmenu)="onRightClick($event)">
+		</li>
+	</ul>
+	<a class="packageLink" href={{packageData.packageLink}}>View package</a>
+	<div class="followers-and-reaction-block">
+		<p>Followers: {{packageData.followers}}</p>
+		<fa-icon [icon]="['far', 'heart']"></fa-icon>
+	</div>
+</div>

@@ -1,3 +1,64 @@
-<p>
-  visitor-profile works!
-</p>
+<div class="visitor-profile">
+	<div class="banner" [style.background-image]="'url('+timelinePicture.imgSrc+')'">
+		<div class="container">
+			<div class="contact-info-container">
+				<p class="profile-picture"><img src={{profilePicture.imgSrc}} alt={{profilePicture.alt}}></p>
+				<div class="info">
+					<p class="name">{{userInfo.name}}</p>
+					<p class="country">{{userInfo.country}}</p>
+					<p class="email">{{userInfo.email}}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container profile-contents">
+		<div class="profile-info">
+			<div class="job-rating">
+				<div class="actions">
+					<button>follow</button>
+					<button class="green-btn">message</button>
+				</div>
+				<p class="number-of-followers">1 Followers</p>
+				<p>Rating</p>
+				<div class="stars"></div>
+				<label>Languages</label>
+				<p class="data"></p>
+				<label>Projects Completed</label>
+				<p class="data"></p>
+				<label>Status</label>
+				<p class="data"></p>
+				<label>Location</label>
+				<p class="data"></p>
+				<label></label>
+			</div>
+		</div>
+		<div class="main">
+			<div class="contents">
+			<p class="title">Photographer/Illustrator</p>
+			<p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam et voluptatibus expedita, consequuntur aut cumque, officia eveniet voluptatum, earum ullam, veniam temporibus laborum excepturi possimus ea molestias nemo soluta sit!</p>
+			<!-- Tabs here -->
+			<tabset class="tabs-container">
+				<tab heading="Basic title" id="tab1">
+					<div class="portfolio-container">
+						<ul class="portfolio-gallery">
+							<li class="image-container" *ngFor="let portfolioImg of porfolioImages">
+								<img
+								src={{portfolioImg.imgSrc}} 
+								alt={{portfolioImg.alt}}>
+							</li>
+						</ul>
+					</div>
+				</tab>
+			    <tab heading="Basic Title 1" [active]="true">
+			    	<ul class="package-container">
+			    		<li class="package" *ngFor="let ppp of photographerPricingPakages">
+			    			<app-package-card [packageData]="ppp"></app-package-card>
+			    		</li>
+			    	</ul>
+			    </tab>
+			    <tab heading="Basic Title 2">Basic content 2</tab>
+			</tabset>
+			</div>
+		</div>
+	</div>
+</div>

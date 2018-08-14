@@ -48,34 +48,12 @@
 <section class="section area02">
 	<div class="container">
 		<h2 class="mb60">Fixed price offers ready to start immediately</h2>
-		<div class="pricing-pakages-container">
-			<div class="photographer-rate"
+		<ul class="pricing-pakages-container">
+			<li class="package"
 			*ngFor="let ppp of photographerPricingPakages">
-				<div class="photographer-card">
-					<p class="photographer-icon">
-						<img
-						src={{ppp.photographerIcon}}
-						alt={{ppp.photographerName}}
-						(contextmenu)="onRightClick($event)">
-					</p>
-					<p class="price">{{ppp.price|currency}}</p>
-					<p class="desc">{{ppp.packageDesc}}</p>
-					<ul class="galery">
-						<li *ngFor="let fi of ppp.featuredImages">
-							<img
-							src={{fi.source}}
-							alt={{fi.imageName}}
-							(contextmenu)="onRightClick($event)">
-						</li>
-					</ul>
-					<a class="packageLink" href={{ppp.packageLink}}>View package</a>
-					<div class="followers-and-reaction-block">
-						<p>Followers: {{ppp.followers}}</p>
-						<fa-icon [icon]="['far', 'heart']"></fa-icon>
-					</div>
-				</div>
-			</div>
-		</div>
+				<app-package-card [packageData]="ppp"></app-package-card>
+			</li>
+		</ul>
 		<button class="green-btn more-btn">Browse More Packages</button>
 	</div>
 </section>
