@@ -28,10 +28,10 @@ export class HomeComponent implements OnInit {
 			text: "Photography"
 		},{
 			icon: "images",
-			text: "Photography"
+			text: "Photo Manipulation"
 		},{
 			icon: "paint-brush",
-			text: "Photography"
+			text: "Photo Retouching"
 		}
 	];
 

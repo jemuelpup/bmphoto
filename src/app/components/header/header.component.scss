@@ -57,6 +57,49 @@ a{
 .show-in-sp{
 	display: none;
 }
+.link-group{
+	position: relative;
+	cursor: pointer;
+	.link-heading{
+		margin-bottom: 0;
+		position: relative;
+		.icon{
+			position: absolute;
+			right: -15px;
+		}	
+	}
+	ul{
+		display: none;
+		position: absolute;
+		background: #fff;
+		width: 220px;
+		padding: 5px 0;
+		@include transition(opacity 500ms ease);
+		li{
+			padding: 2px 5px;
+			a{
+			    width: 100%;
+			    display: block;
+			    border-bottom: 1px solid #ddd;
+			    padding: 2px 7px;
+			    @include transition(color 500ms ease);
+			    &:hover{
+			    	color: $color-primary;
+			    }
+			}
+			&:last-child{
+				a{
+					border-bottom: 0;
+				}
+			}
+		}
+	}
+	&:hover{
+		ul{
+			display: block;
+		}
+	}
+}
 
 @media only screen and (max-width: 990px) {
 	.logo{
