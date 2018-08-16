@@ -1,4 +1,6 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { PhotographyPackage } from '../../models/photography-package';
+
 
 @Component({
   selector: 'app-package-card',
@@ -7,10 +9,17 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class PackageCardComponent implements OnInit {
 
-	@Input() packageData;
+	@Input() packageData:PhotographyPackage;
+	@Output() likePackage = new EventEmitter();
   constructor() { }
 
   ngOnInit() {
+  }
+  like(){
+  	this.packageData.liked = !this.packageData.liked;
+  }
+  onRightClick(e){
+    return false;
   }
 
 }

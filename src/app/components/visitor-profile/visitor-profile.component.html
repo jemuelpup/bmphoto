@@ -1,8 +1,8 @@
 <div class="visitor-profile">
-	<div class="banner" [style.background-image]="'url('+timelinePicture.imgSrc+')'">
+	<div class="banner" [style.background-image]="'url('+timelinePicture.source+')'">
 		<div class="container">
 			<div class="contact-info-container">
-				<p class="profile-picture"><img src={{profilePicture.imgSrc}} alt={{profilePicture.alt}}></p>
+				<p class="profile-picture"><img src={{profilePicture.source}} alt={{profilePicture.imageName}}></p>
 				<div class="info">
 					<p class="name">{{userInfo.name}}</p>
 					<p class="country">{{userInfo.country}}</p>
@@ -43,8 +43,8 @@
 						<ul class="portfolio-gallery">
 							<li class="image-container" *ngFor="let portfolioImg of porfolioImages">
 								<img
-								src={{portfolioImg.imgSrc}} 
-								alt={{portfolioImg.alt}}>
+								src={{portfolioImg.source}} 
+								alt={{portfolioImg.imageName}}>
 							</li>
 						</ul>
 					</div>

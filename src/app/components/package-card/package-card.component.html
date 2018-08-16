@@ -12,6 +12,10 @@
 	<a class="packageLink" href={{packageData.packageLink}}>View package</a>
 	<div class="followers-and-reaction-block">
 		<p>Followers: {{packageData.followers}}</p>
-		<fa-icon [icon]="['far', 'heart']"></fa-icon>
+		<fa-icon
+		class="heart-icon"
+		[icon]="['far', 'heart']"
+		[class.active]="packageData.liked"
+		(click)="like()"></fa-icon>
 	</div>
 </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PhotographyPackage } from '../../models/photography-package';
 
 @Component({
 	selector: 'app-home',
@@ -98,7 +99,7 @@ export class HomeComponent implements OnInit {
 		followers: 4479
 	}
 	/**/
-	photographerPricingPakages: {}[] = [];
+	photographerPricingPakages: PhotographyPackage[] = [];
 
 	ngOnInit() {
 		this.photographerPricingPakages.push({
@@ -120,6 +121,7 @@ export class HomeComponent implements OnInit {
 					source:"assets/images/photographerFeaturedImages/samplePic_03.jpg",
 				}
 			],
+			liked: false,
 			packageLink: "",
 			followers: 4479
 		});
@@ -142,6 +144,7 @@ export class HomeComponent implements OnInit {
 					source:"assets/images/photographerFeaturedImages/samplePic_06.jpg",
 				}
 			],
+			liked: false,
 			packageLink: "",
 			followers: 4479
 		});
@@ -164,6 +167,7 @@ export class HomeComponent implements OnInit {
 					source:"assets/images/photographerFeaturedImages/samplePic_09.jpg",
 				}
 			],
+			liked: false,
 			packageLink: "",
 			followers: 4479
 		});
@@ -186,6 +190,7 @@ export class HomeComponent implements OnInit {
 					source:"assets/images/photographerFeaturedImages/samplePic_12.jpg",
 				}
 			],
+			liked: false,
 			packageLink: "",
 			followers: 4479
 		});
