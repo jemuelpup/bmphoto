@@ -16,10 +16,14 @@
 				</div>
 			</li>
 		</ul>
-		<h2 class="fz18 lttr-sp0_07">Photographers around the world ready to build your image</h2>
+		<h2 class="fz18">Photographers around the world ready to build your image</h2>
 		<div class="gallery-container">
 			<ul class="gallery-data">
-				<li class="gallery-image-container" *ngFor="let imgData of galleryData" (contextmenu)="onRightClick($event)">
+				<li
+				class="gallery-image-container"
+				*ngFor="let imgData of galleryData"
+				routerLink="/visitorprofile"
+				(contextmenu)="onRightClick($event)">
 					<img
 					class="gallery-image"
 					src={{imgData.sampleImg}}
@@ -28,7 +32,7 @@
 					<!-- <div class="gradient-hover"></div> -->
 					<div class="image-info">
 						<span class="photographer-icon"><img src={{imgData.photographerIcon}} alt={{imgData.photographerName}}></span>
-						<p class="photographer-name">{{imgData.photographerName}}</p>
+						<span class="photographer-name">{{imgData.photographerName}}</span>
 					</div>
 				</li>
 			</ul>
@@ -47,7 +51,7 @@
 </section>
 <section class="section area02">
 	<div class="container">
-		<h2 class="mb60">Fixed price offers ready to start immediately</h2>
+		<h2>Fixed price offers ready to start immediately</h2>
 		<ul class="pricing-pakages-container">
 			<li class="package"
 			*ngFor="let ppp of photographerPricingPakages">

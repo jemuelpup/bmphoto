@@ -9,12 +9,17 @@ import { UserData } from '../../models/user-data';
   styleUrls: ['./visitor-profile.component.scss']
 })
 export class VisitorProfileComponent implements OnInit {
-
+	ratingStars: number[];
 	userInfo: UserData = {
 		name: "Johnnattan B.",
 		country: "United Kingdom",
 		email: "@johnnatanbrookphotos",
-		followers: 1
+		followers: 197048,
+		rating: 5,
+		languages: ["English","Spanish","Russian"],// to be changed
+		projectsCompleted: 430,
+		status: "Available for hire",
+		location: "London, UK"
 	};
 	profilePicture: Image = { source: "assets/images/profile/userFolder/albums/profile_pictures/profile01.jpg",imageName:"####"};
 	timelinePicture:  Image = { source: "assets/images/profile/userFolder/albums/timeline_pictures/timelinename_01.jpg",imageName:"####"};
@@ -122,6 +127,10 @@ export class VisitorProfileComponent implements OnInit {
 		packageLink: "",
 		followers: 4479
 	});
+	this.ratingStars = [];
+	for (var i = this.userInfo.rating - 1; i >= 0; i--) {
+		this.ratingStars.push(i);
+	}
   }
 
 }

@@ -13,13 +13,13 @@ export class HomeComponent implements OnInit {
 	steps: {}[] = [
 		{
 			title: "post your job",
-			description: "Less searching. More finding. Discover royalty-free images, illustrations and videos that will make you stand out."
+			description: "Less searching. More finding. Discover\n royalty-free images, illustrations and videos that will make you stand out."
 		},{
 			title: "get proposals",
-			description: "Less searching. More finding. Discover royalty-free images, illustrations and videos that will make you stand out."
+			description: "Less searching. More finding. Discover\n royalty-free images, illustrations and videos that will make you stand out."
 		},{
 			title: "get your job delivered",
-			description: "Less searching. More finding. Discover royalty-free images, illustrations and videos that will make you stand out."
+			description: "Less searching. More finding. Discover\n royalty-free images, illustrations and videos that will make you stand out."
 		}
 	];
 
@@ -80,7 +80,7 @@ export class HomeComponent implements OnInit {
 		photographerName: "Shannel Stewart",
 		photographerIcon:"assets/images/photographerIcon/photographerIcon_01.jpg",
 		price: 260,
-		packageDesc: "Lorem Ipsum is simply dummy text of the prin. . .",
+		packageDesc: "Lorem Ipsum is simply dummy text of the prin...",
 		featuredImages: [
 			{
 				imageName:"Dummy",
@@ -106,7 +106,7 @@ export class HomeComponent implements OnInit {
 			photographerName: "Shannel Stewart",
 			photographerIcon:"assets/images/photographerIcon/photographerIcon_01.jpg",
 			price: 260,
-			packageDesc: "Lorem Ipsum is simply dummy text of the prin. . .",
+			packageDesc: "Lorem Ipsum is simply dummy text of the prin...",
 			featuredImages: [
 				{
 					imageName:"Dummy",
@@ -129,7 +129,7 @@ export class HomeComponent implements OnInit {
 			photographerName: "Shannel Stewart",
 			photographerIcon:"assets/images/photographerIcon/photographerIcon_01.jpg",
 			price: 1780,
-			packageDesc: "Lorem Ipsum is simply dummy text of the prin. . .",
+			packageDesc: "Lorem Ipsum is simply dummy text of the prin...",
 			featuredImages: [
 				{
 					imageName:"Dummy",
@@ -152,7 +152,7 @@ export class HomeComponent implements OnInit {
 			photographerName: "Shannel Stewart",
 			photographerIcon:"assets/images/photographerIcon/photographerIcon_01.jpg",
 			price: 9.70,
-			packageDesc: "Lorem Ipsum is simply dummy text of the prin. . .",
+			packageDesc: "Lorem Ipsum is simply dummy text of the prin...",
 			featuredImages: [
 				{
 					imageName:"Dummy",
@@ -175,7 +175,7 @@ export class HomeComponent implements OnInit {
 			photographerName: "Shannel Stewart",
 			photographerIcon:"assets/images/photographerIcon/photographerIcon_01.jpg",
 			price: 3480,
-			packageDesc: "Lorem Ipsum is simply dummy text of the prin. . .",
+			packageDesc: "Lorem Ipsum is simply dummy text of the prin...",
 			featuredImages: [
 				{
 					imageName:"Dummy",

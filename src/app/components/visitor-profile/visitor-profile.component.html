@@ -15,30 +15,40 @@
 		<div class="profile-info">
 			<div class="job-rating">
 				<div class="actions">
-					<button>follow</button>
+					<button class="bordered-button">follow</button>
 					<button class="green-btn">message</button>
 				</div>
-				<p class="number-of-followers">1 Followers</p>
-				<p>Rating</p>
-				<div class="stars"></div>
-				<label>Languages</label>
-				<p class="data"></p>
-				<label>Projects Completed</label>
-				<p class="data"></p>
-				<label>Status</label>
-				<p class="data"></p>
-				<label>Location</label>
-				<p class="data"></p>
-				<label></label>
+				<p class="number-of-followers">197,098 Followers</p>
+				<label class="label">Rating</label>
+				<div class="stars data">
+					<fa-icon *ngFor="let i of ratingStars" class="icon" icon="star"></fa-icon>
+				</div>
+				<label class="label">Languages</label>
+				<p class="data">{{userInfo.languages.join(", ")}}</p>
+				<label class="label">Projects Completed</label>
+				<p class="data">{{userInfo.projectsCompleted}}</p>
+				<label class="label">Status</label>
+				<p class="data">{{userInfo.status}}</p>
+				<label class="label">Location</label>
+				<p class="data">{{userInfo.location}}</p>
+				<div class="badges-container">
+					<label class="label">Badges</label>
+					<ul class="badges">
+						<li class="badge"></li>
+						<li class="badge"></li>
+						<li class="badge"></li>
+					</ul>
+				</div>
 			</div>
+			
 		</div>
 		<div class="main">
 			<div class="contents">
 			<p class="title">Photographer/Illustrator</p>
-			<p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam et voluptatibus expedita, consequuntur aut cumque, officia eveniet voluptatum, earum ullam, veniam temporibus laborum excepturi possimus ea molestias nemo soluta sit!</p>
+			<p class="desc">Lorem ipsum dolor sit amet, eu melius corrumpit concludaturque eos, no tation aeterno aliquam eos. An harum utroque constituam nec, at molestie moderatius omittantur est. Cu vis inermis habemus invenire, aperiam docendi an vis, ei suas latine facilisi est. Ex eos soleat persecuti forensibus, sed facete splendide ne, partem maluisset accommodare eos eu. Duo ad reque splendide, nec tantas persius ex, nostrud scripserit no eum. Usu ei aeterno platonem, ius ne suas populo tritani.</p>
 			<!-- Tabs here -->
 			<tabset class="tabs-container">
-				<tab heading="Basic title" id="tab1">
+				<tab heading="Portfolio" [active]="true">
 					<div class="portfolio-container">
 						<ul class="portfolio-gallery">
 							<li class="image-container" *ngFor="let portfolioImg of porfolioImages">
@@ -49,14 +59,14 @@
 						</ul>
 					</div>
 				</tab>
-			    <tab heading="Basic Title 1" [active]="true">
+			    <tab heading="Packages">
 			    	<ul class="package-container">
 			    		<li class="package" *ngFor="let ppp of photographerPricingPakages">
 			    			<app-package-card [packageData]="ppp"></app-package-card>
 			    		</li>
 			    	</ul>
 			    </tab>
-			    <tab heading="Basic Title 2">Basic content 2</tab>
+			    <tab heading="Reviews">Basic content 2</tab>
 			</tabset>
 			</div>
 		</div>

@@ -11,7 +11,7 @@
 	</ul>
 	<a class="packageLink" href={{packageData.packageLink}}>View package</a>
 	<div class="followers-and-reaction-block">
-		<p>Followers: {{packageData.followers}}</p>
+		<p class="followers">Followers: {{packageData.followers | number}}</p>
 		<fa-icon
 		class="heart-icon"
 		[icon]="['far', 'heart']"
