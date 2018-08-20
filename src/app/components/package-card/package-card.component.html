@@ -2,7 +2,7 @@
 	<p class="photographer-icon">
 		<img src={{packageData.photographerIcon}} alt={{packageData.photographerName}} (contextmenu)="onRightClick($event)">
 	</p>
-	<p class="price">{{packageData.price|currency}}</p>
+	<p class="price">{{packageData.price|priceformat:"USD"}}</p>
 	<p class="desc">{{packageData.packageDesc}}</p>
 	<ul class="galery">
 		<li *ngFor="let fi of packageData.featuredImages">

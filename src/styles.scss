@@ -136,6 +136,9 @@ button{
 			color: #101010;
 			padding: 8px 13px;
     		letter-spacing: 0.7px;
+    		span{
+				letter-spacing: 0.3px;
+    		}
 			&.active{
 				border-bottom: 4px solid $color-primary;
 				background-color: transparent;

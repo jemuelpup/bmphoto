@@ -17,6 +17,8 @@ import { faHeart } from '@fortawesome/free-regular-svg-icons';
 import { VisitorProfileComponent } from './components/visitor-profile/visitor-profile.component';
 import { RegistrationComponent } from './components/registration/registration.component';
 import { PackageCardComponent } from './components/package-card/package-card.component';
+import { PriceformatPipe } from './pipes/priceformat.pipe';
+import { LoginComponent } from './components/login/login.component';
 
 
 library.add(
@@ -31,7 +33,9 @@ library.add(
     FooterComponent,
     VisitorProfileComponent,
     RegistrationComponent,
-    PackageCardComponent
+    PackageCardComponent,
+    PriceformatPipe,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

@@ -5,6 +5,9 @@
 header{
 	padding: 17px 0;
 	border-bottom: 1px solid #efeff0;
+	.container{
+		max-width: 1595px;
+	}
 }
 ul{
 	margin-bottom: 0;
@@ -114,7 +117,7 @@ a{
 		}
 	}
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
 	.show-in-sp{
 		display: block;
 	}
@@ -149,6 +152,7 @@ a{
 		}
 		.green-btn{
 			margin: 5px auto 0;
+			padding: 0 33px;
 		}
 	}
 }
