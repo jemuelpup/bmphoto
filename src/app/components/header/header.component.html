@@ -71,11 +71,33 @@
 				<li><a href="#">How It Works</a></li>
 				<li><a href="#">Photographer?</a></li>
 			</ul>
-			<ul class="link-access">
+			<div class="link-block02">
+			<ul class="link-access" *ngIf="!logedIn">
 				<li><a routerLink="/login">Sign in</a></li>
 				<li><a routerLink="/registration">Sign up</a></li>
-				<li><button class="green-btn">Post a Project</button></li>
 			</ul>
+			<ul class="notification-and-options" *ngIf="logedIn">
+				<li><fa-icon class="icon" [icon]="['far', 'envelope']"></fa-icon></li>
+				<li><fa-icon class="icon" [icon]="['far', 'bell']"></fa-icon></li>
+				<li class="account-options">
+					<p class="user-profile-icon" (click)="optionsOpened = !optionsOpened"><img src="assets/images/photographerIcon/photographerIcon_01.jpg" alt=""></p>
+					<div class="options" *ngIf="optionsOpened">
+						<p class="name">Johnnattan B.</p>
+						<ul class="option-list">
+							<li><a href="">Post a Package</a></li>
+							<li><a href="">Dashboard</a></li>
+							<li><a href="">Profile</a></li>
+							<li><a href="">Payments</a></li>
+							<li><a href="">Settings</a></li>
+							<li><a href="">Invite and Earn</a></li>
+							<li><a href="">Customer Support</a></li>
+							<li><a href="">Log out</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+			<button class="green-btn">Post a Project</button>
+			</div>
 		</div>
 	</div>
 </header>

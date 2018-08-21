@@ -1,6 +1,9 @@
 @import '../../../assets/scss/variables.scss';
 @import '../../../assets/scss/functions.scss';
 
+// *{
+// 	outline: 1px solid red;
+// }
 .visitor-profile{
 	background-color: #f7f8fa;
 	.banner{
@@ -93,10 +96,12 @@
 	    letter-spacing: 0.5px;
 	    font-size: 14px;
 	}
-	.data{
+	.info-block{
 		margin-bottom: 20px;
-		letter-spacing: 0.4px;
-		font-size: 12px;
+		.data{
+			letter-spacing: 0.1px;
+			font-size: 12px;
+		}
 	}
 	.badges-container{
 		margin-top: 77px;
@@ -128,6 +133,7 @@
 			font-weight: $fw-regular;
 			height: 35px;
 			max-width: 120px;
+			flex-basis: 120px;
 			letter-spacing: 1.6px;
 			&.bordered-button{
 				background-color: transparent;
@@ -152,6 +158,10 @@
 	.icon{
 		font-size: 12px;
 		color: #febe00;
+		margin-right: 4px;
+		&:last-child{
+			margin-right: 0;
+		}
 	}
 }
 .portfolio-gallery{
@@ -169,7 +179,7 @@
 }
 .package-container{
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	flex-wrap: wrap;
 	.package{
 		width: 30%;
@@ -182,6 +192,17 @@
 	.package-container{
 		.package{
 			width: 50%;
+		}
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.profile-contents{
+		.profile-info,
+		.main{
+			width: 100%;
+			max-width: 100%;
+			margin: 0;
 		}
 	}
 }

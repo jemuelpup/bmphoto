@@ -8,6 +8,8 @@ import { Component, OnInit,HostListener } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
 	menuOpened: boolean = true;
+  logedIn: boolean = true;
+  optionsOpened: boolean = false;
 
 	@HostListener('window:resize', ['$event'])
 	onResize(event) {

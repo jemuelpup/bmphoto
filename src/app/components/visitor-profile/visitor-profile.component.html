@@ -23,14 +23,22 @@
 				<div class="stars data">
 					<fa-icon *ngFor="let i of ratingStars" class="icon" icon="star"></fa-icon>
 				</div>
-				<label class="label">Languages</label>
-				<p class="data">{{userInfo.languages.join(", ")}}</p>
-				<label class="label">Projects Completed</label>
-				<p class="data">{{userInfo.projectsCompleted}}</p>
-				<label class="label">Status</label>
-				<p class="data">{{userInfo.status}}</p>
-				<label class="label">Location</label>
-				<p class="data">{{userInfo.location}}</p>
+				<div class="info-block">
+					<label class="label">Languages</label>
+					<p class="data">{{userInfo.languages.join(", ")}}</p>
+				</div>
+				<div class="info-block">
+					<label class="label">Projects Completed</label>
+					<p class="data">{{userInfo.projectsCompleted}}</p>
+				</div>
+				<div class="info-block">
+					<label class="label">Status</label>
+					<p class="data">{{userInfo.status}}</p>
+				</div>
+				<div class="info-block">
+					<label class="label">Location</label>
+					<p class="data">{{userInfo.location}}</p>
+				</div>
 				<div class="badges-container">
 					<label class="label">Badges</label>
 					<ul class="badges">
