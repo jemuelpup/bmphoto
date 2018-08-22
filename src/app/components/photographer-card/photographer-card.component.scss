@@ -1,0 +1,71 @@
+@import '../../../assets/scss/variables.scss';
+@import '../../../assets/scss/functions.scss';
+
+.photographer-card{
+	background-color: #fff;
+	position: relative;
+	padding: 40px 34px;
+	max-width: 300px;
+	text-align: center;
+	.heart-icon{
+		position: absolute;
+	    top: 12px;
+	    right: 19px;
+	    cursor: pointer;
+	    color: #ddddde;
+	    font-size: 22px;
+		@include transition(color 500ms ease);
+		&:hover{
+			color: $color-primary;
+		}
+	}
+}
+.name{
+	color: $color-primary;
+	font-size: 16px;
+	font-weight: 700;
+	margin-bottom: 0;
+}
+.country{
+	font-size: 13px;
+	color: #262626;
+	margin-bottom: 13px;
+}
+.price{
+	font-size: 16px;
+	color: #262626;
+	letter-spacing: 0.7px;
+}
+.professional-description{
+	font-size: 13px;
+	font-weight: 300;
+	color: #47494f;
+	text-align: left;
+	letter-spacing: 0.4px;
+	margin-bottom: 42px;
+}
+.photographer-icon{
+	overflow: hidden;
+	width: 100px;
+	height: 100px;
+	margin: 0 auto 28px;
+	@include border-radius(100%);
+	img{
+		width: 100%;
+	}
+}
+.white-button{
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    border: 1px solid #45494c;
+    font-size: 14px;
+    font-weight: 400;
+    color: #45494c;
+    width: 148px;
+    margin: 0 auto;
+    height: 35px;
+    padding: 0;
+    letter-spacing: 0.4px;
+}

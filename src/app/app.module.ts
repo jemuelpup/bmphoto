@@ -15,18 +15,20 @@ import { GlobalsService } from './services/globals.service';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faBars, faCamera, faImages,faPaintBrush,faCaretDown,
-faStar } from '@fortawesome/free-solid-svg-icons';
+faStar,faHeart as faSHeart, faSearch } from '@fortawesome/free-solid-svg-icons';
 import { faHeart, faEnvelope, faBell } from '@fortawesome/free-regular-svg-icons';
 import { VisitorProfileComponent } from './components/visitor-profile/visitor-profile.component';
 import { RegistrationComponent } from './components/registration/registration.component';
 import { PackageCardComponent } from './components/package-card/package-card.component';
 import { PriceformatPipe } from './pipes/priceformat.pipe';
 import { LoginComponent } from './components/login/login.component';
+import { SearchPhotographerComponent } from './components/search-photographer/search-photographer.component';
+import { PhotographerCardComponent } from './components/photographer-card/photographer-card.component';
 
 
 library.add(
-  faHeart,faBars, faCamera, faImages,
-  faPaintBrush,faCaretDown,faStar, faEnvelope, faBell);
+  faHeart,faSHeart,faBars, faCamera, faImages,
+  faPaintBrush,faCaretDown,faStar, faEnvelope, faBell,faSearch);
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ library.add(
     RegistrationComponent,
     PackageCardComponent,
     PriceformatPipe,
-    LoginComponent
+    LoginComponent,
+    SearchPhotographerComponent,
+    PhotographerCardComponent
   ],
   imports: [
     BrowserModule,
