@@ -92,6 +92,7 @@
 	flex-wrap: wrap;
 }
 .photog-card{
+	margin-bottom: 16px;
 	@include transition(box-shadow 200ms ease);
 	&:hover{
 		cursor: pointer;
