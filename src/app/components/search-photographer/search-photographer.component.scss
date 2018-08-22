@@ -31,6 +31,8 @@
 			margin-right: 2px;
 			height: 45px;
 			border: 1px solid #e4e5e7;
+			padding-left: 16px;
+			font-size: 14px;
 			@include box-shadow(none);
 			@include border-radius(0);
 			&:focus{
@@ -68,6 +70,7 @@
 			width: 248px;
 			text-align: left;
 			padding-left: 16px;
+			letter-spacing: 0.3px;
 			@include border-radius(0);
 			&:focus{
 				@include box-shadow(none);
@@ -89,5 +92,15 @@
 	flex-wrap: wrap;
 }
 .photog-card{
-	margin-bottom: 1rem;
+	@include transition(box-shadow 200ms ease);
+	&:hover{
+		cursor: pointer;
+		transform-origin: top center;
+		@include box-shadow($depth-2);
+	}
+}
+@media only screen and (max-width: 1260px) {
+	.search-results{
+		justify-content: space-evenly;
+	}
 }
