@@ -59,7 +59,8 @@ export class VisitorProfileComponent implements OnInit {
 			}
 		],
 		packageLink: "",
-		followers: 4479
+		followers: 4479,
+		packageSold: 879
 	});
 	this.photographerPricingPakages.push({
 		photographerName: "Shannel Stewart",
@@ -81,7 +82,8 @@ export class VisitorProfileComponent implements OnInit {
 			}
 		],
 		packageLink: "",
-		followers: 4479
+		followers: 4479,
+		packageSold: 879
 	});
 	this.photographerPricingPakages.push({
 		photographerName: "Shannel Stewart",
@@ -103,7 +105,8 @@ export class VisitorProfileComponent implements OnInit {
 			}
 		],
 		packageLink: "",
-		followers: 4479
+		followers: 4479,
+		packageSold: 879
 	});
 	this.photographerPricingPakages.push({
 		photographerName: "Shannel Stewart",
@@ -125,7 +128,8 @@ export class VisitorProfileComponent implements OnInit {
 			}
 		],
 		packageLink: "",
-		followers: 4479
+		followers: 4479,
+		packageSold: 879
 	});
 	this.ratingStars = [];
 	for (var i = this.userInfo.rating - 1; i >= 0; i--) {

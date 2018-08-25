@@ -1,15 +1,15 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 import { PhotographyPackage } from '../../models/photography-package';
 import { PriceformatPipe } from '../../pipes/priceformat.pipe';
 
 @Component({
-  selector: 'app-package-card',
-  templateUrl: './package-card.component.html',
-  styleUrls: ['./package-card.component.scss']
+  selector: 'app-package-price-card',
+  templateUrl: './package-price-card.component.html',
+  styleUrls: ['./package-price-card.component.scss']
 })
-export class PackageCardComponent implements OnInit {
+export class PackagePriceCardComponent implements OnInit {
 
-	@Input() packageData:PhotographyPackage;
+  @Input() packageData:PhotographyPackage;
   constructor() { }
 
   ngOnInit() {

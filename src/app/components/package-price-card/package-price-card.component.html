@@ -1,0 +1,13 @@
+<div class="package-pricing-card">
+	<p class="price">{{packageData.price|priceformat:"USD"}}</p>
+	<p class="desc">{{packageData.packageDesc}}</p>
+	<ul class="galery">
+		<li *ngFor="let fi of packageData.featuredImages">
+			<img src={{fi.source}} alt={{fi.imageName}} (contextmenu)="onRightClick($event)">
+		</li>
+	</ul>
+	<div class="sell-block">
+		<p class="sold">Sold {{packageData.packageSold}}</p>
+		<button class="buy-btn">Buy</button>
+	</div>
+</div>

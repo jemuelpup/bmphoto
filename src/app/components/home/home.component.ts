@@ -123,7 +123,8 @@ export class HomeComponent implements OnInit {
 			],
 			liked: false,
 			packageLink: "",
-			followers: 4479
+			followers: 4479,
+			packageSold: 879
 		});
 		this.photographerPricingPakages.push({
 			photographerName: "Shannel Stewart",
@@ -146,7 +147,8 @@ export class HomeComponent implements OnInit {
 			],
 			liked: false,
 			packageLink: "",
-			followers: 4479
+			followers: 4479,
+			packageSold: 879
 		});
 		this.photographerPricingPakages.push({
 			photographerName: "Shannel Stewart",
@@ -169,7 +171,8 @@ export class HomeComponent implements OnInit {
 			],
 			liked: false,
 			packageLink: "",
-			followers: 4479
+			followers: 4479,
+			packageSold: 879
 		});
 		this.photographerPricingPakages.push({
 			photographerName: "Shannel Stewart",
@@ -192,7 +195,8 @@ export class HomeComponent implements OnInit {
 			],
 			liked: false,
 			packageLink: "",
-			followers: 4479
+			followers: 4479,
+			packageSold: 879
 		});
 	}
 	onRightClick(e){

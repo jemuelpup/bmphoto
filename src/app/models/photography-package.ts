@@ -9,4 +9,5 @@ export class PhotographyPackage {
 	liked: boolean;
 	packageLink: string;
 	followers: number;
+	packageSold: number;
 }

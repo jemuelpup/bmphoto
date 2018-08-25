@@ -82,7 +82,10 @@
 				<li class="account-options">
 					<p class="user-profile-icon" (click)="optionsOpened = !optionsOpened"><img src="assets/images/photographerIcon/photographerIcon_01.jpg" alt=""></p>
 					<div class="options" *ngIf="optionsOpened">
-						<p class="name">Johnnattan B.</p>
+						<div class="edit-options-block">
+							<p class="name">Johnnattan B.</p>
+							<span class="edit"><fa-icon class="icon" [icon]="['fas', 'pencil-alt']"></fa-icon></span>
+						</div>
 						<ul class="option-list">
 							<li><a href="">Post a Package</a></li>
 							<li><a href="">Dashboard</a></li>
