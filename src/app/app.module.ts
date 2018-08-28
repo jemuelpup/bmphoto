@@ -15,7 +15,7 @@ import { GlobalsService } from './services/globals.service';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faBars, faCamera, faImages,faPaintBrush,faCaretDown,
-faStar,faHeart as faSHeart, faSearch, faPencilAlt } from '@fortawesome/free-solid-svg-icons';
+faStar,faHeart as faSHeart, faSearch, faPencilAlt, faEllipsisH } from '@fortawesome/free-solid-svg-icons';
 import { faHeart, faEnvelope, faBell } from '@fortawesome/free-regular-svg-icons';
 import { VisitorProfileComponent } from './components/visitor-profile/visitor-profile.component';
 import { RegistrationComponent } from './components/registration/registration.component';
@@ -25,11 +25,14 @@ import { LoginComponent } from './components/login/login.component';
 import { SearchPhotographerComponent } from './components/search-photographer/search-photographer.component';
 import { PhotographerCardComponent } from './components/photographer-card/photographer-card.component';
 import { PackagePriceCardComponent } from './components/package-price-card/package-price-card.component';
+import { MessengerComponent } from './components/messenger/messenger.component';
+import { ContactsComponent } from './components/messenger/contacts/contacts.component';
 
 
 library.add(
   faHeart,faSHeart,faBars, faCamera, faImages, faPencilAlt,
-  faPaintBrush,faCaretDown,faStar, faEnvelope, faBell,faSearch);
+  faPaintBrush,faCaretDown,faStar, faEnvelope, faBell,faSearch,
+  faEllipsisH);
 
 @NgModule({
   declarations: [
@@ -44,7 +47,9 @@ library.add(
     LoginComponent,
     SearchPhotographerComponent,
     PhotographerCardComponent,
-    PackagePriceCardComponent
+    PackagePriceCardComponent,
+    MessengerComponent,
+    ContactsComponent
   ],
   imports: [
     BrowserModule,

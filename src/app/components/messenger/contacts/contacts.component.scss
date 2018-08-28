@@ -1,0 +1,40 @@
+@import '../../../../assets/scss/variables.scss';
+@import '../../../../assets/scss/functions.scss';
+
+.contact{
+	display: flex;
+	padding: 8px 20px;
+	.profile-icon{
+		position: relative;
+		width: 50px;
+		height: 50px;
+		margin-right: 17px;
+		img{
+			width: 100%;
+			@include border-radius(100%);	
+		}
+		&:after{
+			content: "";
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			border: 2px solid #fff;
+			background-color: #8a9298;
+			width: 14px;
+			height: 14px;
+			overflow: hidden;
+			@include border-radius(100%);
+		}
+	}
+}
+.contact-data{
+	.name{
+		color: $color-primary;
+		font-size: 14px;
+		font-weight: 600;
+	}
+	.description{
+		font-size: 13px;
+		color: 262626;
+	}
+}

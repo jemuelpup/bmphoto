@@ -4,6 +4,7 @@ import { HomeComponent } from './components/home/home.component';
 import { VisitorProfileComponent } from './components/visitor-profile/visitor-profile.component';
 import { RegistrationComponent } from './components/registration/registration.component';
 import { LoginComponent } from './components/login/login.component';
+import { MessengerComponent } from './components/messenger/messenger.component';
 import { SearchPhotographerComponent } from './components/search-photographer/search-photographer.component';
 
 const routes: Routes = [
@@ -12,6 +13,7 @@ const routes: Routes = [
 	{ path: 'visitorprofile', component: VisitorProfileComponent },
 	{ path: 'login', component: LoginComponent },
 	{ path: 'searchphotographer', component: SearchPhotographerComponent },
+	{ path: 'messenger', component: MessengerComponent },
 	{ path: 'registration', component: RegistrationComponent }
 ];
 
@@ -25,5 +27,6 @@ export const RoutingComponents = [
 	VisitorProfileComponent,
 	RegistrationComponent,
 	LoginComponent,
+	MessengerComponent,
 	SearchPhotographerComponent
 ];

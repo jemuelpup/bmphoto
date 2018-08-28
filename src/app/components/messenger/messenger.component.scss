@@ -1,0 +1,50 @@
+.messenger{
+	background-color: #f7f8fa;
+	.container{
+		max-width: 1234px;
+	}
+	.chat-container{
+		display: flex;
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+.contact-list{
+	background-color: #fff;
+	width: 300px;
+	flex-basis: 300px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-right: 14px;
+}
+.chat-body{
+	background-color: #fff;
+	width: 100%;
+	padding: 25px;
+	.chat-header{
+		position: relative;
+		display: flex;
+		padding-bottom: 30px;
+		border-bottom: 1px solid #e0e0e0;
+		margin-bottom: 33px;
+		.chat-picture{
+			width: 100px;
+			flex-basis: 100px;
+		    flex-grow: 0;
+		    flex-shrink: 0;
+			margin-right: 20px;
+		}
+		.chat-data{
+
+		}
+		.more{
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+	}
+}
+.message{
+	display: flex;
+	padding: 9px 45px;
+}

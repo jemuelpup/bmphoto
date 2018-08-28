@@ -133,6 +133,21 @@ a{
 			margin-right: 0;
 		}
 	}
+	.account-options{
+		&:after{
+			content: "";
+		    position: absolute;
+		    width: 50px;
+		    height: 50px;
+		    top: 20px;
+		    right: 0;
+		}
+		&:hover{
+			.options{
+				display: block;
+			}
+		}
+	}
 }
 .user-profile-icon{
 	width: 40px;
@@ -146,6 +161,7 @@ a{
 }
 
 .options{
+display: none;
   background-color: #fff;
   position: absolute;
   z-index: 1;
